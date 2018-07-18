@@ -12,8 +12,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('js', () => {
-    return gulp.src('./js/*.js')
-        .pipe(ugly())
+    return gulp.src('./js/app.js')
         .pipe(rename('bundle.js'))
         .pipe(gulp.dest('./js'));
 });

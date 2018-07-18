@@ -1,3 +1,15 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+        .then(()=>{
+            console.log('success');
+        })
+        .catch((err)=>{
+            console.error(err);
+        })
+} else {
+    console.error('no service worker')
+}
+
 // Equivalent of jQuery .ready
 document.addEventListener('DOMContentLoaded', function () {
 
