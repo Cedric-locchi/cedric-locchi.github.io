@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var spanYear = document.getElementById('year');
     spanYear.appendChild(year);
 
+
     // Initialize variables
     var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop; // Scroll position of body
 
