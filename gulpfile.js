@@ -23,3 +23,7 @@ gulp.task('img', ()=>{
         .pipe(img())
         .pipe(gulp.dest('./images'));
 });
+
+gulp.task('watch', ()=>{
+    gulp.watch('./css/style.css', ['css']);r
+})
