@@ -1,10 +1,5 @@
 // Equivalent of jQuery .ready
 document.addEventListener('DOMContentLoaded', function () {
-    var date = new Date();
-    var year = date.getFullYear();
-    var spanYear = document.getElementById('year');
-    spanYear.appendChild(year);
-
 
     // Initialize variables
     var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop; // Scroll position of body

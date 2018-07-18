@@ -11,6 +11,13 @@ gulp.task('css', () => {
         .pipe(gulp.dest('./css'));
 });
 
+gulp.task('js', () => {
+    return gulp.src('./js/*.js')
+        .pipe(ugly())
+        .pipe(rename('bundle.js'))
+        .pipe(gulp.dest('./js'));
+});
+
 gulp.task('img', ()=>{
     return gulp.src(['./images/*.svg','./images/*.jpg'])
         .pipe(img())
