@@ -1,9 +1,9 @@
-if('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
-        .then(()=>{
+        .then(function () {
             console.log('success');
         })
-        .catch((err)=>{
+        .catch(function (err) {
             console.error(err);
         })
 } else {
@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
             toggle.addEventListener('click', function (e) {
                 // Prevent the default link behavior
                 e.preventDefault();
-                console.log(e);
                 // Get anchor link and calculate distance from the top
                 var dataTarget = document.querySelector('.landing__section');
                 var dataSpeed = toggle.getAttribute('data-speed');
